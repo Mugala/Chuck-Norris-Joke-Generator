@@ -8,6 +8,16 @@ function getJokes(e){
 
   xhr.open('GET',`http://api.icndb.com/jokes/random/${number}`,true);
 
+  xhr.onload = function(){
+    if(this.status ===200){
+      const response = this.responseText;
+      console.log(response);
+
+    }else{
+
+    }
+  }
+
 
   xhr.send();
   e.preventDefault();
