@@ -21,6 +21,8 @@ function getJokes(e){
       }else{
         output += '<li>Something went wrong</li>';
       }
+
+      document.querySelector('.jokes').innerHTML = output;
     }
   }
 
